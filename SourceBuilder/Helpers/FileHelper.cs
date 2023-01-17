@@ -22,7 +22,7 @@ public class FileHelper
     public static async Task<bool> CreateFileAsync(SourceFile sourceFile)
     {
         var projectPath = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.Parent!.FullName;
-        var filePath = Path.Combine(projectPath, sourceFile.Path);
+        var filePath = Path.Combine(projectPath, sourceFile.Path, sourceFile.Name);
 
         await using var fs = File.Create(filePath);
 

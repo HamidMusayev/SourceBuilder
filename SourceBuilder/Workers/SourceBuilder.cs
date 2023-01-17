@@ -9,7 +9,7 @@ public class SourceBuilder
     private static SourceBuilder? _instance;
     private static readonly object Padlock = new();
 
-    public readonly List<SourceFile> SourceFiles = new();
+    private readonly List<SourceFile> _sourceFiles = new();
 
     private SourceBuilder()
     {
@@ -29,7 +29,7 @@ public class SourceBuilder
 
     public void AddSourceFile(string filePath, string fileName, string text)
     {
-        SourceFiles.Add(new SourceFile { Path = filePath, Name = fileName, Text = text });
+        _sourceFiles.Add(new SourceFile { Path = filePath, Name = fileName, Text = text });
     }
 
     public async Task<bool> BuildSourceFiles()
@@ -45,9 +45,9 @@ public class SourceBuilder
             instance.Build(entities);
         }
 
-        if (!SourceFiles.Any()) return true;
+        if (!_sourceFiles.Any()) return true;
 
-        foreach (var sourceFile in SourceFiles)
+        foreach (var sourceFile in _sourceFiles)
             if (!await FileHelper.CreateFileAsync(sourceFile))
                 return false;
 
