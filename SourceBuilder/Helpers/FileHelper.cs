@@ -21,9 +21,10 @@ public class FileHelper
 
     public static async Task<bool> CreateFileAsync(SourceFile sourceFile)
     {
-        var projectPath = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.FullName;
+        var projectPath = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.Parent!.FullName;
+        var filePath = Path.Combine(projectPath, sourceFile.Path);
 
-        await using var fs = File.Create(projectPath);
+        await using var fs = File.Create(filePath);
 
         var title = new UTF8Encoding(true).GetBytes(sourceFile.Text);
         await fs.WriteAsync(title);
