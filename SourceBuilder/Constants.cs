@@ -3,7 +3,7 @@
 public static class Constants
 {
     public const string TestFilePath = "C:\\Users\\hemidmu\\Desktop\\SourceGenerator-master\\ClassLibrary\\";
-    public const string DataFilePath = "C:\\Users\\hemidmu\\Desktop\\SourceGenerator-master\\SourceBuilder\\data.json";
+    public const string DataFileName = "data.json";
 
     #region PATHS
 

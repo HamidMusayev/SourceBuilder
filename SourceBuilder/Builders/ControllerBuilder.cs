@@ -4,6 +4,7 @@ using SourceBuilder.Models;
 
 namespace SourceBuilder.Builders;
 
+// ReSharper disable once UnusedType.Global
 public class ControllerBuilder : IBuilder
 {
     public void Build(List<Entity> entities)

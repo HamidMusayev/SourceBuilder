@@ -5,6 +5,7 @@ using SourceBuilder.Models;
 namespace SourceBuilder.Builders;
 
 // ReSharper disable once InconsistentNaming
+// ReSharper disable once UnusedType.Global
 public class IServiceBuilder : IBuilder
 {
     public void Build(List<Entity> entities)

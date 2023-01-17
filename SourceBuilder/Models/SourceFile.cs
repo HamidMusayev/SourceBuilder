@@ -2,7 +2,7 @@
 
 public class SourceFile
 {
-    public string Path { get; set; }
-    public string Name { get; set; }
-    public string Text { get; set; }
+    public required string Path { get; set; }
+    public required string Name { get; set; }
+    public required string Text { get; set; }
 }

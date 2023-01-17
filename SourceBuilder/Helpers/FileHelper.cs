@@ -8,13 +8,13 @@ public class FileHelper
 {
     public static async Task<List<Entity>> ReadJsonAsync()
     {
-        List<Entity> data;
+        var projectPath = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.FullName;
+        var filePath = Path.Combine(projectPath, Constants.DataFileName);
 
-        using (var r = new StreamReader(Constants.DataFilePath))
-        {
-            var json = await r.ReadToEndAsync();
-            data = JsonSerializer.Deserialize<List<Entity>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
-        }
+        using var r = new StreamReader(filePath);
+
+        var json = await r.ReadToEndAsync();
+        var data = JsonSerializer.Deserialize<List<Entity>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
 
         return data;
     }
@@ -23,11 +23,10 @@ public class FileHelper
     {
         var projectPath = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.FullName;
 
-        using (var fs = File.Create(projectPath))
-        {
-            var title = new UTF8Encoding(true).GetBytes(sourceFile.Text);
-            await fs.WriteAsync(title);
-        }
+        await using var fs = File.Create(projectPath);
+
+        var title = new UTF8Encoding(true).GetBytes(sourceFile.Text);
+        await fs.WriteAsync(title);
 
         return true;
     }
