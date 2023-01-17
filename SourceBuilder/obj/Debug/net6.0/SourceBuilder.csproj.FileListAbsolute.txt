@@ -1,0 +1,15 @@
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\bin\Debug\net6.0\SourceBuilder.exe
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\bin\Debug\net6.0\SourceBuilder.deps.json
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\bin\Debug\net6.0\SourceBuilder.runtimeconfig.json
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\bin\Debug\net6.0\SourceBuilder.dll
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\bin\Debug\net6.0\SourceBuilder.pdb
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.csproj.AssemblyReference.cache
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.AssemblyInfoInputs.cache
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.AssemblyInfo.cs
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.csproj.CoreCompileInputs.cache
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.dll
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\refint\SourceBuilder.dll
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.pdb
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\SourceBuilder.genruntimeconfig.cache
+C:\Users\hemidmu\Desktop\SourceGenerator-master\SourceBuilder\obj\Debug\net6.0\ref\SourceBuilder.dll
